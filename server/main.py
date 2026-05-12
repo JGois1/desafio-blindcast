@@ -48,3 +48,4 @@ def handle_document(req: DocumentRequest):
             raise HTTPException(status_code=404, detail="Key not found")
         del storage[req.key]
         return {"status": "ok", "code": 0}
+
